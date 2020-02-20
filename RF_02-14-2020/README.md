@@ -24,7 +24,9 @@ String object with value `hello world!` in the memory, and `s` refers to this ob
   to this new String object. The previously created object ( `hello world!`) still remains in the memory. Hence, it is not memory
   efficient as it creates new object whenever modified. 
 
- * A memory efficient way of manipulating Strings is making use of **StringBuilder** or **StringBuffer** classes in Java.
+ * A memory efficient way of manipulating Strings is making use of **StringBuilder** or **StringBuffer** classes in Java. Both
+ `StringBuilder` and `StringBuffer` are mutable, backed by a mutable character array. Hence, the character array is resized
+ to accomodate the new characters when appending. 
 
 ## String Comparison 
  * Since Strings are reference types, they should always be compared using the `.equals()` method. This compares the contents of
